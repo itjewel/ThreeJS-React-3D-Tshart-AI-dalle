@@ -1,6 +1,5 @@
-# ThreeJS-React-3D-Tshart-AI-dalle
-ThreeJS-React-3D-Tshart- AI-dalle
-# Hotel booking website
+
+# ThreeJS React 3D Tshart AI-dalle
 
 If you need any queries or want to hire me please inform me by \
 ↪️ Email: md.jewelmia52@gmail.com \

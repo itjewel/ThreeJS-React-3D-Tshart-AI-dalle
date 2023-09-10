@@ -38,15 +38,17 @@ Clone the project
 Install dependencies
 Start the client
 ```bash
-  - cd client
-  - npm i
-  - npm rund dev
+   cd client
+   npm i
+   npm rund dev
 ```
 
 Start the server
 
 ```bash
-  npm run dev
+   cd server
+   npm i
+   npm start
 ```
 To install a new package
 

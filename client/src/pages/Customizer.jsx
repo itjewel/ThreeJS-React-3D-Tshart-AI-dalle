@@ -29,7 +29,6 @@ const Customizer = () => {
     //console.log(activeEditorTab)
     switch (activeEditorTab) {
       case "colorpicker":
-        console.log('jewelfarazi')
         return <ColorPicker />
       case "filepicker":
         return <FilePicker
@@ -51,7 +50,7 @@ const Customizer = () => {
 
   const handleSubmit = async (type) => {
     if(!prompt) return alert("Please enter a prompt");
-
+   
     try {
       setGeneratingImg(true);
 
@@ -66,7 +65,8 @@ const Customizer = () => {
       })
 
       const data = await response.json();
-
+      // console.log(data);
+      // return;
       handleDecals(type, `data:image/png;base64,${data.photo}`)
     } catch (error) {
       alert(error)

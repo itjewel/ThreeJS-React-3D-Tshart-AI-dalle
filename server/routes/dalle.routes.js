@@ -1,5 +1,6 @@
 import express from 'express';
 import * as dotenv from 'dotenv';
+import http from "https";
 import { Configuration, OpenAIApi} from 'openai';
 
 dotenv.config();
@@ -10,6 +11,7 @@ const config = new Configuration({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
+
 const openai = new OpenAIApi(config);
 
 router.route('/').get((req, res) => {
@@ -17,9 +19,10 @@ router.route('/').get((req, res) => {
 })
 
 router.route('/').post(async (req, res) => {
+
   try {
     const { prompt } = req.body;
-
+    // console.log(req.body)
     const response = await openai.createImage({
       prompt,
       n: 1,
